@@ -1,6 +1,6 @@
 // 1. Set the variable `givenName` to the string "Addison".
 
- var givenName = "Addison"
+var givenName = "Addison"
 
 // 2. Set candies equal to 20, people to 6, and leftover equal
 // to the remainder of dividing 20 by 6.
@@ -12,51 +12,56 @@ var candies = "20", people = "6", leftover = candies % people
 // where <name> is the name given as an argument to the function.
 
 
-function greeting (name){
+function greeting(name) {
     return "Hello, " + name + "!"
-    
+
 }
 
 // 4. Create a function called isOdd that, given a number, will
 // return true if it is odd and false if it is not.
 
-function isOdd (number) {
-    if (number % 2 === 1){
-        return true;}
-    else if (number %2 === -1){
-        return true;}
-    else {   
-        return false;}
+function isOdd(number) {
+    if (number % 2 === 1) {
+        return true;
+    }
+    else if (number % 2 === -1) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
-    
+
 // 5. Create a function called isEven that, given a number, will
 // return true if it is even and false if it is not.
 
-function isEven (number) {
-    if (number % 2 === 0){
-        return true;}
-    //else if (number %2 === -1){
-        //return true;}
-    else {   
-        return false;}
+function isEven(number) {
+    if (number % 2 === 0) {
+        return true;
     }
+    //else if (number %2 === -1){
+    //return true;}
+    else {
+        return false;
+    }
+}
 
 // 6. Create a function called fahrenheitToCelsius that takes a
 // Fahrenheit temperature as an argument and returns the
 // temperature in Celsius.
 
-function fahrenheitToCelsius (fahtemp){
+function fahrenheitToCelsius(fahtemp) {
     return (fahtemp - 32) / 1.8;
-    }
+}
 
 
 // 6. Create a function called celsiusToFahrenheit that takes a
 // Celsius temperature as an argument and returns the
 // temperature in Fahrenheit.
 
-function celsiusToFahrenheit (celtemp){
-    return (celtemp * 1.8) +32;
-    }
+function celsiusToFahrenheit(celtemp) {
+    return (celtemp * 1.8) + 32;
+}
 
 // 7. Create a function called fahrenheitToKelvin that takes a
 // Fahrenheit temperature as an argument and returns the
@@ -65,22 +70,24 @@ function celsiusToFahrenheit (celtemp){
 // Absolute zero (0 K) is equivalent to −273.15 C.
 // 1 degree Kelvin equals 1 degree Celsius.
 
-function fahrenheitToKelvin (fahtemp){
-    return (fahtemp - 32) / 1.8 +273.15;
+function fahrenheitToKelvin(fahtemp) {
+    return (fahtemp - 32) / 1.8 + 273.15;
 }
 
 // 8. Create a function called lesser that takes two numbers as
 // arguments and returns the lesser of them. This function should
 // use an if/else statement.
 
-function lesser (a, b){
-    if (a>b){
-    return (b)}
-
-    else (b>a);{
-    return (a)}
-
+function lesser(a, b) {
+    if (a > b) {
+        return (b)
     }
+
+    else (b > a); {
+        return (a)
+    }
+
+}
 
 
 // 9. Create a function called multigreeting that takes a name
@@ -95,31 +102,30 @@ function lesser (a, b){
 //
 // If any other language code is used, return nothing.
 
-function multigreeting (name, langCode){
-    var English = "en"  
-    var Spanish = "es" 
+function multigreeting(name, langCode) {
+    var English = "en"
+    var Spanish = "es"
     var French = "fr"
     var Esperanto = "eo"
 
 
-    if (langode = en) {
-        return ("Hello," + name + "!");
-        }  else if (langCode = es) {
-                return ("¡Hola," + name +"!");
-        }    
-           else if (langCode = fr) {
-                return ("Bonjour," + name +"!");
-        }
-           else if (langCode = eo) {
-                return ("Saluton," + name +"!");
-        }
-           else if (langCode !== en, es, fr, eo) {
-                return (null);
-        }
-    
-
+    if (langCode === English) {
+        return ("Hello, " + name + "!");
+    } else if (langCode === Spanish) {
+        return ("¡Hola, " + name + "!");
     }
-  
+    else if (langCode === French) {
+        return ("Bonjour, " + name + "!");
+    }
+    else if (langCode === Esperanto) {
+        return ("Saluton, " + name + "!");
+    }
+    else {return 
+    }
+
+
+}
+
 
 // 10. Create a function, howOld, that takes a birthdate and a another
 // date (the "current date") and returns how many years old the person
